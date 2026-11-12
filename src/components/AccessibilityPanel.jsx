@@ -1,4 +1,4 @@
-import { forwardRef, useEffect, useRef, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import { telHref } from "../data/biz";
 
 const AccessibilityPanel = forwardRef(function AccessibilityPanel(_, dialogRef) {
