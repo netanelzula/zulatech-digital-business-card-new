@@ -1,5 +1,5 @@
 import { BIZ, waHref, telHref, mapsHref, wazeHref } from "../data/biz";
-import { IconTel, IconWhatsapp, IconFacebook, IconInstagram, IconMaps, IconWaze } from "./icons";
+import { IconTel, IconWhatsapp, IconFacebook, IconInstagram, IconMaps, IconWaze, IconGlobe } from "./icons";
 
 export default function QuickIcons() {
   return (
@@ -69,6 +69,18 @@ export default function QuickIcons() {
           <IconWaze />
         </span>
         וייז
+      </a>
+      <a
+        className="icon-btn"
+        href={BIZ.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`מעבר לאתר ${BIZ.name} (נפתח בלשונית חדשה)`}
+      >
+        <span className="tile t-web" aria-hidden="true">
+          <IconGlobe />
+        </span>
+        אתר
       </a>
     </nav>
   );
